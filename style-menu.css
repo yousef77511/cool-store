@@ -1,0 +1,171 @@
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffaf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.loader {
+  border: 6px solid #ffc76b;
+  border-top: 6px solid #f27059;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* style-menu.css */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf5;
+  color: #1a1a1a;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ww-navbar {
+  background: #ffc76b;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.ww-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ww-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.ww-nav-links a,
+#toggle-theme {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1a1a1a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.ww-menu {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.ww-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.ww-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.ww-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ww-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ww-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ww-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.ww-card p {
+  color: #f27059;
+  font-weight: bold;
+}
+
+.ww-faq {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.ww-faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ww-faq-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.ww-faq-question {
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.ww-faq-question:hover {
+  color: #f27059;
+}
+
+.ww-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.ww-faq-answer.active {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.ww-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #ffc76b;
+  transition: background 0.3s ease;
+}

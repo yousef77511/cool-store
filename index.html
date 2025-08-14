@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waffle World - Homepage</title>
+    <link rel="icon" type="image/x-icon" href="./images/waffle-favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav class="ww-navbar">
+            <h1 class="ww-brand">Waffle World 🧇</h1>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul class="ww-nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu & FAQ</a></li>
+                <li><button id="toggle-theme">🌗</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ww-hero">
+        <h2>Freshly Made Waffles 🧇</h2>
+        <p>Delicious, Crispy, and Golden Brown.</p>
+        <a href="./menu.html"><button class="ww-cta">Order Now</button></a>
+    </section>
+
+    <section class="ww-slider">
+        <img id="slider-image" src="images/waffle1.jpg" alt="Waffle" />
+    </section>
+
+    <section class="ww-about">
+        <h2>About Our Waffles</h2>
+        <p>
+            We use premium ingredients to bring you the fluffiest and crispiest waffles in town. Whether you love
+            chocolate, strawberries, or syrup – we’ve got it!
+        </p>
+    </section>
+
+    <section class="ww-flavors">
+        <h2>Featured Flavors</h2>
+        <div class="ww-flavor-scroll">
+            <div class="ww-flavor-card">
+                <img src="images/choco-waffle.jpg" alt="Choco Waffle" />
+                <h4>Chocolate Crunch</h4>
+            </div>
+            <div class="ww-flavor-card">
+                <img src="images/strawberry.jpg" alt="Strawberry Waffle" />
+                <h4>Strawberry Dream</h4>
+            </div>
+            <div class="ww-flavor-card">
+                <img src="images/berry-waffle.jpg" alt="Blueberry Waffle" />
+                <h4>Blueberry Blast</h4>
+            </div>
+            <div class="ww-flavor-card">
+                <img src="images/banana.jpg" alt="Banana Waffle" />
+                <h4>Banana Bliss</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="ww-locations">
+        <h2>Visit Waffle World Near You</h2>
+        <div class="ww-location-list">
+            <div>
+                <h4>📍 Mumbai</h4>
+                <p>Waffle World, Andheri West – 10 AM to 11 PM</p>
+            </div>
+            <div>
+                <h4>📍 Bengaluru</h4>
+                <p>Waffle World, Indiranagar – 9 AM to 10 PM</p>
+            </div>
+            <div>
+                <h4>📍 Delhi</h4>
+                <p>Waffle World, Connaught Place – 11 AM to 11 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ww-why">
+        <h2>Why Choose Waffle World?</h2>
+        <div class="ww-reasons">
+            <div>
+                <h4>🥇 Premium Ingredients</h4>
+                <p>Only the freshest fruits, finest chocolates, and real dairy go into every bite.</p>
+            </div>
+            <div>
+                <h4>👨‍🍳 Crafted with Care</h4>
+                <p>Our waffles are made by passionate chefs who care about every golden square.</p>
+            </div>
+            <div>
+                <h4>🚚 Fast Delivery</h4>
+                <p>Get warm, fluffy waffles delivered to your door in under 30 minutes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ww-testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="ww-review">
+            <p>“Absolutely delicious! Best waffles I've had in ages. Will order again!”</p>
+            <span>— Ayesha R.</span>
+        </div>
+        <div class="ww-review">
+            <p>“So crispy on the outside and soft inside. Perfect with strawberries!”</p>
+            <span>— Rahul S.</span>
+        </div>
+    </section>
+
+    <footer class="ww-footer">
+        <p>&copy; 2025 Waffle World. All rights reserved. | Made with 🥇 and ❤️</p>
+    </footer>
+
+    <script>
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.getElementById("navLinks").classList.toggle("active");
+        });
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
